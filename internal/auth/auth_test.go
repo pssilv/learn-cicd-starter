@@ -18,7 +18,7 @@ func TestGetAPIKey(t *testing.T) {
         "Authorization": []string{"ApiKey valid_api_key"},
       },
       wantAPIKey: "valid_api_key",
-      wantErr: true,
+      wantErr: false,
     },
     {
       name: "Invalid API key",
