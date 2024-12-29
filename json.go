@@ -27,8 +27,8 @@ func respondWithJSON(w http.ResponseWriter, code int, payload interface{}) {
 		return
 	}
 	w.WriteHeader(code)
-  _, err = w.Write(dat)
-  if err != nil {
-    respondWithError(w, http.StatusInternalServerError, "Failed to write to the body")
-  }
+	_, err = w.Write(dat)
+	if err != nil {
+		respondWithError(w, http.StatusInternalServerError, "Failed to write to the body")
+	}
 }
