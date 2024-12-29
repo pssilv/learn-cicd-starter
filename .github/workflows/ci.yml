@@ -21,8 +21,8 @@ jobs:
       - name: Unit Tests
         run: go test ./... -cover
 
-  style:
-    name: Style
+  formatting:
+    name: Formatting
     runs-on: ubuntu-latest
 
     steps:
